@@ -18,37 +18,65 @@
     <main class="my-5 py-5 ">
         <div class="container bg-tertiary my-5 gy-5 text-center">
             <h2 class="text-uppercase text-white">Calcola il prezzo del tuo biglietto</h2>
-            <div class="row p-3 align-items-center text-primary bg-body">
-                <div class="col text-center">
-                    <h5>Nome Cognome</h5>
-                    <label class="visually-hidden" for="autoSizingInput">Nome Cognome</label>
-                    <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
-                </div>
-                <div class="col text-center">
-                    <h5>Numero Chilometri</h5>
-                    <label class="visually-hidden" for="tripLenght">Numero Chilometri</label>
-                    <input type="number" class="form-control" name="tripLenght" id="tripLenght">
+            <form action="">
+                <!-- FORM TO COMPLETE -->
+                <div class="row p-3 align-items-center text-primary bg-body rounded">
+                    <div class="col text-center">
+                        <h5>Nome Cognome</h5>
+                        <label class="visually-hidden" for="passengerNameInput">Nome Cognome</label>
+                        <input type="text" value="" class="form-control" name="userName" id="passengerNameInput"
+                            placeholder="John Snow">
+                    </div>
+                    <div class="col text-center">
+                        <h5>Numero Chilometri</h5>
+                        <label class="visually-hidden" for="kmNumberInput">Numero Chilometri</label>
+                        <input type="number" value="" class="form-control" name="tripLenght" id="kmNumberInput">
+
+                    </div>
+                    <div class="col text-center">
+                        <h5>Fascia d'età</h5>
+                        <label class="visually-hidden" for="ageRangeInput">Fascia d'età</label>
+                        <select class="form-select" name="passengerAge" id="ageRangeInput">
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="minorenne">Minorenne</option>
+                            <option value="over-65">Over 65</option>
+                        </select>
+                    </div>
+                    <div class="col-12 pt-5">
+                        <button id="generate" class="btn btn-primary" type="submit">Genera</button>
+                        <button id="cancel" class="btn btn-primary" type="reset">Annulla</button>
+                    </div>
 
                 </div>
-                <div class="col text-center">
-                    <h5>Fascia d'età</h5>
-                    <label class="visually-hidden" for="inlineFormSelectPref">Fascia d'età</label>
-                    <select class="form-select" id="inlineFormSelectPref">
-                        <option value="maggiorenne">Maggiorenne</option>
-                        <option value="minorenne">Minorenne</option>
-                        <option value="over-65">Over 65</option>
-                    </select>
+                <!-- /FORM TO COMPLETE -->
+            </form>
+
+            <!-- TICKET INFO -->
+            <h2 id="show" class="text-uppercase text-white visually-hidden">Il tuo biglietto</h2>
+            <div id="show" class="row visually-hidden p-3 align-items-center text-primary bg-body rounded">
+                <h3 class="text-uppercase">Dettaglio passeggeri</h3>
+                <div class="col-4">
+                    <h2 class="text-uppercase">Nome Passeggero</h2>
+                    <p id="passengerName"></p>
+                </div>
+                <div class="col">
+                    <h4>aa</h4>
+                    <p>aa</p>
+                </div>
+                <div class="col">
+                    <h4>aa</h4>
+                    <p>aa</p>
+                </div>
+                <div class="col">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="col">
+                    <h4></h4>
+                    <p></p>
                 </div>
             </div>
-            <h2 class="text-uppercase text-white visually-hidden">Il tuo biglietto</h2>
-            <div class="row visually-hidden">
-                <div class="col12">
-
-                </div>
-            </div>
-        </div>
-        <div class="container">
-
+            <!-- /TICKET INFO -->
         </div>
     </main>
 
