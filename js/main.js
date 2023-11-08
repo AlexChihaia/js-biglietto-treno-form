@@ -46,7 +46,7 @@ const scontoOverPercentuale = 40;
 submitButton.addEventListener('click',
     function () {
         let ticketPrice = costoBigliettoKm * Number(tripLenght.value);
-        console.log(ticketPrice);
+
 
 
 
@@ -62,7 +62,6 @@ submitButton.addEventListener('click',
         else {
             type.innerText = 'Biglietto standard';
         }
-        console.log(ticketPrice);
         show.classList.remove('d-none');
         nameDetail.innerText = passengerName.value;
         cabinNumber.innerText = randomNumberCabin;
