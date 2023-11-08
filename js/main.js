@@ -16,8 +16,7 @@ const cabinNumber = document.getElementById('cabin');
 const cpCode = document.getElementById('cp');
 const finalPrice = document.getElementById('price');
 
-const randomNumberCabin = Math.floor(Math.random() * 12 + 1);
-const randomNumberCp = Math.floor(Math.random() * 9000) + 1000;
+
 
 
 /* variabile di display */
@@ -64,8 +63,8 @@ submitButton.addEventListener('click',
         }
         show.classList.remove('d-none');
         nameDetail.innerText = passengerName.value;
-        cabinNumber.innerText = randomNumberCabin;
-        cpCode.innerText = randomNumberCp;
+        cabinNumber.innerText = Math.floor(Math.random() * 12 + 1);
+        cpCode.innerText = Math.floor(Math.random() * 9000) + 1000;
         finalPrice.innerText = ticketPrice.toFixed(2) + ' ' + ('€');
 
     }
