@@ -78,6 +78,7 @@ submitButton.addEventListener('click',
 
 resetButton.addEventListener('click',
     function () {
+        show.classList.add('d-none');
 
     }
 )
