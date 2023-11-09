@@ -4,7 +4,7 @@
 /* dati form */
 
 const passengerName = document.getElementById('passengerNameInput');
-const tripLenght = document.getElementById('kmNumberInput');
+const tripLength = document.getElementById('kmNumberInput');
 const passengerAgeRange = document.getElementById('ageRangeInput');
 
 
@@ -44,7 +44,7 @@ const scontoOverPercentuale = 40;
 
 submitButton.addEventListener('click',
     function () {
-        let ticketPrice = costoBigliettoKm * Number(tripLenght.value);
+        let ticketPrice = costoBigliettoKm * Number(tripLength.value);
 
 
 
